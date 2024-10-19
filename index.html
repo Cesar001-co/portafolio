@@ -7,9 +7,14 @@
     <title>Cesar.Dev</title>
     <link rel="icon" href="assets/img/logos/small.png" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CDN NORMALIZE CSS
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" />
+    <!-- modules npm -->
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
@@ -56,10 +61,22 @@
             <h3>Portafolio</h3>
             <hr>
             <div>
-                <button>
+                <button data-modal-id="myModal">
                     <img src="assets/img/portfolio/nuxten.png" alt="NUXTEN WEB">
                     <h4>Nuxten</h4>
                 </button>
+
+                <!-- Modal -->
+                <div id="myModal" class="eins-modal">
+                    <div class="eins-modal-content">
+                        <div class="eins-modal-close"></div>
+
+                        <!-- Your Content -->
+
+                        <button class="eins-modal-close-button">OK</button>
+                    </div>
+                </div>
+
                 <button>
                     <img src="assets/img/portfolio/sickpet.jpg" alt="NUXTEN WEB">
                     <h4>Sickpet</h4>
@@ -68,7 +85,7 @@
         </section>
 
         <!-- SKILLSET -->
-        <section id="skillset" class="even">
+        <section id="skillset" class="even scroll">
             <h3>Skillset</h3>
             <hr>
             <div class="skillset-container">
@@ -122,7 +139,7 @@
             </div>
         </section> -->
         <!-- CONTACT -->
-        <section id="contact">
+        <section id="contact" class="scroll">
             <h3>Contact</h3>
             <hr>
             <!-- FlowCV form -->
@@ -154,6 +171,8 @@
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fixed.js"></script>
+    <!-- Modules npm -->
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 
 </html>
