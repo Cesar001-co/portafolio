@@ -1,0 +1,32 @@
+.eins-modal-content>h3 {
+    font-size: 1rem;
+}
+
+.eins-modal-content>.content {
+    display: flex;
+
+    text-align: justify;
+
+    p {
+        margin: 1rem 0 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav > a {
+        color: white;
+        padding: .5rem 20px;
+        border-radius: 0.4rem;
+        margin: 0 1rem;
+        text-decoration: none;
+        background-color: var(--primary);
+        transition: background-color .3s ease;
+
+        &:hover { 
+            background-color: var(--black);
+        }
+    }
+}

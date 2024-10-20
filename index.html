@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/skillset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
-
+    <link rel="stylesheet" type="text/css" href="assets/css/modules.css" />
 </head>
 
 <body>
@@ -61,26 +61,89 @@
             <h3>Portafolio</h3>
             <hr>
             <div>
-                <button data-modal-id="myModal">
+                <button data-modal-id="nuxtenModal">
                     <img src="assets/img/portfolio/nuxten.png" alt="NUXTEN WEB">
                     <h4>Nuxten</h4>
                 </button>
-
-                <!-- Modal -->
-                <div id="myModal" class="eins-modal">
+                <!-- Nuxten Modal -->
+                <div id="nuxtenModal" class="eins-modal">
                     <div class="eins-modal-content">
                         <div class="eins-modal-close"></div>
-
-                        <!-- Your Content -->
-
-                        <button class="eins-modal-close-button">OK</button>
+                        <h3>Nuxten Project</h3>
+                        <div class="content">
+                            <img src="assets/img/portfolio/nuxten_modal.jpg">
+                            <div>
+                                <p>Development of a tool used to measure the usability of
+                                    a software product based on the heuristic principles
+                                    proposed by Jakob Nielsen.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>Developed in Angular for the FrontEnd and Spring
+                                            Boot for handling requests to the PostgreSQL
+                                            database in the Backend.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>It allows identifying issues and obtaining relevant
+                                            information about the usability level of the
+                                            software product.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav>
+                                <a href="https://github.com/Cesar001-co/nuxten_project" target="_blank">
+                                    Github
+                                </a>
+                                <a href="http://190.5.199.21/NUXTEN_PROJECT" target="_blank">
+                                    Web
+                                </a>
+                            </nav>
+                        </div>
                     </div>
                 </div>
 
-                <button>
+                <button data-modal-id="sickpetModal">
                     <img src="assets/img/portfolio/sickpet.jpg" alt="NUXTEN WEB">
                     <h4>Sickpet</h4>
                 </button>
+
+                <!-- Sickpet Modal -->
+                <div id="sickpetModal" class="eins-modal">
+                    <div class="eins-modal-content">
+                        <div class="eins-modal-close"></div>
+                        <h3>Nuxten Project</h3>
+                        <div class="content">
+                            <img src="assets/img/portfolio/sickpet.jpg">
+                            <div>
+                                <p>SickPet is a mobile application created to manage the
+                                    care of pets and animals by veterinary clinics and their
+                                    owners.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>Built with the Angular - Ionic framework for mobile
+                                            application development.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Implementation of technologies such as Firebase
+                                            Database, as well as APIs like the Maps JavaScript
+                                            API and Directions API for handling routes in Google
+                                            Maps.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav>
+                                <a href="https://github.com/Cesar001-co/SickPetCode" target="_blank">
+                                    Github
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
